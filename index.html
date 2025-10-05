@@ -1,0 +1,44 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rialo Bomber Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Rialo Logo" class="logo">
+    <h1>Rialo Bomber Quest</h1>
+  </header>
+
+  <main>
+    <canvas id="gameCanvas" width="624" height="528"></canvas>
+
+    <!-- Touch controls -->
+    <div id="touch-controls">
+      <button class="control" id="up">⬆</button>
+      <div class="horizontal">
+        <button class="control" id="left">⬅</button>
+        <button class="control" id="bomb">💣</button>
+        <button class="control" id="right">➡</button>
+      </div>
+      <button class="control" id="down">⬇</button>
+    </div>
+
+    <div class="info">
+      ❤️ Lives: <span id="lives">3</span> 
+      💣 Bombs: <span id="bombCount">1</span> 
+      🔥 Power: <span id="power">1</span>
+    </div>
+
+    <button id="restart">Restart Game</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Rialolista Studio</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
